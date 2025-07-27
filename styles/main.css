@@ -60,8 +60,165 @@ body {
     font-size: 1.2rem;
     color: #666;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 3rem;
     line-height: 1.8;
+}
+
+/* Preview Showcase */
+.preview-showcase {
+    margin-top: 3rem;
+    padding: 2rem 0;
+}
+
+.preview-showcase h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.preview-item {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.preview-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.preview-image {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    position: relative;
+    color: white;
+}
+
+.preview-image i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.preview-label {
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.preview-item p {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 1rem;
+}
+
+/* Recommendations Section */
+.recommendations {
+    padding: 4rem 0;
+    background: #f8f9fa;
+}
+
+.recommendations h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.recommendations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.recommendation-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.recommendation-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.recommendation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.recommendation-icon i {
+    font-size: 2rem;
+}
+
+.recommendation-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.recommendation-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.recommendation-card ul {
+    list-style: none;
+}
+
+.recommendation-card li {
+    padding: 0.5rem 0;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.recommendation-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: bold;
 }
 
 /* Templates Section */
@@ -287,18 +444,22 @@ body {
     .hero h2,
     .templates h2,
     .features h2,
-    .pricing h2 {
+    .pricing h2,
+    .recommendations h2 {
         font-size: 2rem;
     }
     
     .template-grid,
     .features-grid,
-    .pricing-grid {
+    .pricing-grid,
+    .recommendations-grid,
+    .preview-grid {
         grid-template-columns: 1fr;
     }
     
     .template-card,
-    .pricing-card {
+    .pricing-card,
+    .recommendation-card {
         padding: 1.5rem;
     }
     
@@ -308,6 +469,15 @@ body {
     
     .pricing-card.featured:hover {
         transform: translateY(-5px);
+    }
+    
+    .preview-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .preview-image i {
+        font-size: 2rem;
     }
 }
 
@@ -321,7 +491,16 @@ body {
     }
     
     .template-card,
-    .pricing-card {
+    .pricing-card,
+    .recommendation-card {
         padding: 1rem;
+    }
+    
+    .preview-showcase h3 {
+        font-size: 1.5rem;
+    }
+    
+    .recommendations h2 {
+        font-size: 1.8rem;
     }
 } 
