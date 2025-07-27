@@ -11,8 +11,12 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="logo">퍼스널 랜딩페이지</h1>
-            <p class="tagline">2시간 완성, 당신만의 브랜딩 페이지</p>
+            <h1 class="logo">링크 하나로 나를 설명하는, 퍼스널 페이지의 시대</h1>
+            <p class="tagline">복잡한 웹사이트는 이제 그만! 당신만의 브랜딩을 한 페이지에 담아보세요</p>
+            <div class="header-cta">
+                <a href="#contact" class="btn btn-primary btn-large">지금 시작하기</a>
+                <a href="#templates" class="btn btn-secondary btn-large">템플릿 보기</a>
+            </div>
         </div>
     </header>
 
@@ -35,6 +39,7 @@
                                 <span class="preview-label">퍼스널 트레이너</span>
                             </div>
                             <p>김병규 트레이너</p>
+                            <a href="templates/kim-trainer.html" class="btn btn-primary btn-small">보러가기</a>
                         </div>
                         <div class="preview-item">
                             <div class="preview-image">
@@ -42,6 +47,7 @@
                                 <span class="preview-label">웹 디자이너</span>
                             </div>
                             <p>이수진 디자이너</p>
+                            <a href="templates/lee-designer.html" class="btn btn-primary btn-small">보러가기</a>
                         </div>
                         <div class="preview-item">
                             <div class="preview-image">
@@ -49,8 +55,15 @@
                                 <span class="preview-label">강사</span>
                             </div>
                             <p>박지민 강사</p>
+                            <a href="templates/park-teacher.html" class="btn btn-primary btn-small">보러가기</a>
                         </div>
                     </div>
+                </div>
+                
+                <!-- 히어로 섹션 CTA 추가 -->
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">무료 상담 신청하기</a>
+                    <a href="#templates" class="btn btn-outline btn-large">템플릿 둘러보기</a>
                 </div>
             </div>
         </section>
@@ -91,7 +104,7 @@
                             <i class="fas fa-user-tie"></i>
                         </div>
                         <h3>1인 서비스 제공자</h3>
-                        <p>상담 신청 폼이 필요한 1인 서비스 제공자</p>
+                        <p>상담신청 폼이 필요한 1인 서비스 제공자</p>
                         <ul>
                             <li>서비스 소개</li>
                             <li>전문 분야 강조</li>
@@ -99,10 +112,15 @@
                         </ul>
                     </div>
                 </div>
+                
+                <!-- 추천 섹션 CTA 추가 -->
+                <div class="recommendations-cta">
+                    <a href="#contact" class="btn btn-primary">나에게 맞는 템플릿 문의하기</a>
+                </div>
             </div>
         </section>
 
-        <section class="templates">
+        <section class="templates" id="templates">
             <div class="container">
                 <h2>템플릿 선택</h2>
                 <div class="template-grid">
@@ -129,6 +147,12 @@
                         </ul>
                         <a href="templates/template-b.html" class="btn btn-primary">템플릿 B 보기</a>
                     </div>
+                </div>
+                
+                <!-- 템플릿 선택 섹션 CTA 추가 -->
+                <div class="templates-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">지금 템플릿 신청하기</a>
+                    <p class="cta-subtext">원하시는 템플릿이 없다면 커스텀 제작도 가능합니다!</p>
                 </div>
             </div>
         </section>
@@ -179,6 +203,49 @@
                             <li>개인화된 디자인</li>
                             <li>SNS 연동 및 고급 기능</li>
                         </ul>
+                    </div>
+                </div>
+                
+                <!-- 요금 구분 섹션 CTA 추가 -->
+                <div class="pricing-cta">
+                    <a href="#contact" class="btn btn-primary btn-large">지금 의뢰하러 가기</a>
+                    <a href="https://www.instagram.com/your_handle" class="btn btn-secondary btn-large" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram DM 문의
+                    </a>
+                    <p class="cta-subtext">궁금한 점이 있으시면 언제든 연락주세요!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문의 섹션 추가 -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>문의 및 상담</h2>
+                <p class="contact-text">퍼스널 랜딩페이지 제작에 대해 궁금한 점이 있으시거나, 바로 시작하고 싶으시다면 언제든 연락주세요!</p>
+                
+                <div class="contact-options">
+                    <div class="contact-option">
+                        <h3>📝 Notion 폼으로 문의</h3>
+                        <p>상세한 요구사항을 정리해서 보내주세요</p>
+                        <a href="https://your-notion-form-link.com" class="btn btn-primary" target="_blank">
+                            Notion 폼 작성하기
+                        </a>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <h3>📊 Google 폼으로 문의</h3>
+                        <p>간단한 문의사항을 빠르게 전달해주세요</p>
+                        <a href="https://your-google-form-link.com" class="btn btn-secondary" target="_blank">
+                            Google 폼 작성하기
+                        </a>
+                    </div>
+                    
+                    <div class="contact-option">
+                        <h3>💬 Instagram DM</h3>
+                        <p>실시간으로 빠른 답변을 받아보세요</p>
+                        <a href="https://www.instagram.com/your_handle" class="btn btn-outline" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram DM 보내기
+                        </a>
                     </div>
                 </div>
             </div>

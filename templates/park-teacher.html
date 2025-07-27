@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박지민 - 영어 강사 | 영어 교육의 새로운 패러다임</title>
+    <link rel="stylesheet" href="../styles/template-a.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 추가 전문적인 스타일 */
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .service-price {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #48cae4;
+            text-align: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+        }
+        
+        .testimonial-rating {
+            color: #feca57;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-rating i {
+            margin-right: 2px;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #48cae4;
+            box-shadow: 0 0 0 3px rgba(72, 202, 228, 0.1);
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #48cae4 0%, #023e8a 100%);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .contact-details h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .contact-details p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">박지민</div>
+            <ul class="nav-menu">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#services">강의</a></li>
+                <li><a href="#contact">문의</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        영어 교육의 <span class="highlight">새로운 패러다임</span>을<br>
+                        함께 만들어갑니다
+                    </h1>
+                    <p class="hero-subtitle">
+                        10년 경력의 영어 강사 박지민이<br>
+                        개인 맞춤형 영어 교육으로 목표 달성을 도와드립니다
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">수강생</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10년</div>
+                            <div class="stat-label">교육 경력</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">목표 달성률</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">무료 레벨 테스트</a>
+                        <a href="#about" class="btn btn-secondary">자세히 보기</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <p>박지민 강사</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>박지민 강사를 선택해야 하는 이유</h2>
+                <p>10년간 쌓아온 경험과 노하우로 최고의 결과를 약속드립니다</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>TESOL 자격증</h3>
+                    <p>국제적으로 인정받는 영어교육 자격증을 보유한 전문 강사</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>1:1 맞춤형</h3>
+                    <p>학습자의 수준과 목표에 맞는 완전 개인화된 영어 교육</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>체계적인 관리</h3>
+                    <p>정기적인 레벨 체크와 피드백으로 지속적인 성장 보장</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>강의 프로그램</h2>
+                <p>목표에 맞는 다양한 영어 교육 프로그램을 제공합니다</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>토익 완벽 대비반</h3>
+                    <p>체계적인 토익 학습으로 목표 점수 달성을 보장합니다.</p>
+                    <ul class="service-features">
+                        <li>실전 문제 중심 학습</li>
+                        <li>개인별 취약점 분석</li>
+                        <li>주 2회 모의고사</li>
+                        <li>1:1 맞춤 상담</li>
+                        <li>온라인 보충 자료 제공</li>
+                    </ul>
+                    <div class="service-price">월 30만원</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>비즈니스 영어</h3>
+                    <p>실무에서 바로 활용할 수 있는 비즈니스 영어를 학습합니다.</p>
+                    <ul class="service-features">
+                        <li>이메일 작성법</li>
+                        <li>회의 영어 표현</li>
+                        <li>프레젠테이션 스킬</li>
+                        <li>실무 회화 연습</li>
+                        <li>비즈니스 문서 작성</li>
+                    </ul>
+                    <div class="service-price">월 25만원</div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>일상 회화</h3>
+                    <p>자연스러운 영어 회화를 통해 영어에 대한 자신감을 키웁니다.</p>
+                    <ul class="service-features">
+                        <li>실생활 표현 학습</li>
+                        <li>원어민 발음 훈련</li>
+                        <li>자유로운 대화 연습</li>
+                        <li>문화적 배경 이해</li>
+                        <li>영어 사고력 향상</li>
+                    </ul>
+                    <div class="service-price">월 20만원</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>수강생 후기</h2>
+                <p>실제 수강생들의 생생한 후기를 확인해보세요</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"박지민 선생님 덕분에 토익 850점에서 950점으로 올렸습니다. 체계적인 학습 방법과 꼼꼼한 피드백이 정말 도움이 되었어요!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>김영수</h4>
+                            <span>대학생</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"비즈니스 영어 수업을 통해 해외 업무에서 자신감을 가질 수 있게 되었습니다. 실무에 바로 적용할 수 있는 내용들이 많았어요."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>이민지</h4>
+                            <span>회사원</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"일상 회화 수업으로 영어에 대한 두려움이 사라졌습니다. 이제 외국인과 자연스럽게 대화할 수 있어요!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>박서연</h4>
+                            <span>주부</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>지금 시작해보세요!</h2>
+                <p>무료 레벨 테스트와 상담을 통해 당신에게 맞는 학습 방법을 찾아보세요</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="level">현재 영어 수준</label>
+                            <select id="level" name="level" required>
+                                <option value="">수준을 선택해주세요</option>
+                                <option value="beginner">초급</option>
+                                <option value="intermediate">중급</option>
+                                <option value="advanced">고급</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="goal">학습 목표</label>
+                            <select id="goal" name="goal" required>
+                                <option value="">목표를 선택해주세요</option>
+                                <option value="toeic">토익 점수 향상</option>
+                                <option value="business">비즈니스 영어</option>
+                                <option value="conversation">일상 회화</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">추가 문의사항</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">무료 레벨 테스트 신청</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>전화 상담</h4>
+                            <p>010-9876-5432</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <p>@park_teacher</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>YouTube</h4>
+                            <p>@park_teacher</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>위치</h4>
+                            <p>서울시 강남구 논현동</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 박지민 영어 강사. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/template-a.js"></script>
+</body>
+</html> 
